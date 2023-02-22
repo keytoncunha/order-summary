@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --cor_fundo: #E1E9FF;
+    --myFont: 'Roboto', Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: var(--cor_fundo) url('../images/pattern-background-mobile.png') center top no-repeat fixed;
+    background-size: contain;
+    font-family: var(--myFont);
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+section {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden; /* */
+    background-color: white;
+}
+img {
+    width: 100%;
+}
+#info {
+    background-color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 30px 20px;
+}
+
+div#plan {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+    padding: 5px 20px;
+    margin-top: 30px;
+}
+    #imag {
+        width: 20%;
+        background: url('../images/icon-music.ico') center center no-repeat scroll;
+        background-size: contain;
+    }
+
+input {
+    width: 90%;
+    
+    font-weight: 600;
+    padding: 15px 0px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+#proc {
+    background-color: #382AE3;
+    color: #fff;
+    box-shadow: 0px 15px 18px rgba(0, 0, 0, 0.32);
+}
+#canc {
+    color: gray;
+}   
+    #canc:hover {
+        color: #000;
+    }
+.pointer, #proc, #canc {
+    cursor: grabbing;
+}
+    .pointer{
+        color: #382AE3;
+        font-weight: 600;
+    }
+    .pointer:hover {
+        text-decoration: none;
+    }
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        font-size: 1.1em;
+    }
+}
+
+/* DESKTOP / NOTEBOOK */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+        background-image: url('../images/pattern-background-desktop.png');
+        background-size: contain;
+    }
+}
+
+
